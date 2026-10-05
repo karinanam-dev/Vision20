@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break time</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="break-body">
+  <div class="break-card">
+    <h1 class="break-title">Look away & rest your eyes</h1>
+    <p class="break-subtitle">Focus on something 20 feet away</p>
+
+    <!-- A random cute character is injected here each break and dances. -->
+    <div class="stage">
+      <div id="character"></div>
+    </div>
+
+    <div id="charName" class="char-name"></div>
+    <div id="breakCountdown" class="break-countdown">20</div>
+    <button id="skipBtn" class="btn btn-skip">Skip</button>
+  </div>
+
+  <script src="characters.js"></script>
+  <script src="break.js"></script>
+</body>
+</html>

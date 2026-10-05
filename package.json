@@ -1,0 +1,36 @@
+{
+  "name": "vision20",
+  "version": "1.0.0",
+  "description": "A cute 20-20-20 break reminder that helps you rest your eyes.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:mac": "electron-builder --mac"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.vision20.app",
+    "productName": "Vision20",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.healthcare-fitness"
+    },
+    "dmg": {
+      "title": "Vision20"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

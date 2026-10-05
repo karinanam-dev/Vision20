@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision20</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="control-body">
+  <div class="control-card">
+    <h1 class="title">Vision20</h1>
+    <p class="subtitle">Rest your eyes every 20 minutes</p>
+
+    <!-- Cute character: sleeps while you work -->
+    <div class="stage">
+      <div id="character" class="character sleeping">
+        <div class="body">
+          <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="cheek left"></div>
+            <div class="cheek right"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+        <div class="zzz">
+          <span>z</span><span>z</span><span>z</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="status" class="status">Timer is stopped</div>
+    <div id="countdown" class="countdown"></div>
+
+    <div class="buttons">
+      <button id="startBtn" class="btn btn-start">Start</button>
+      <button id="stopBtn" class="btn btn-stop" disabled>Stop</button>
+    </div>
+
+    <p class="hint">Stop before you sleep, start again when you're back.</p>
+  </div>
+
+  <script src="control.js"></script>
+</body>
+</html>
